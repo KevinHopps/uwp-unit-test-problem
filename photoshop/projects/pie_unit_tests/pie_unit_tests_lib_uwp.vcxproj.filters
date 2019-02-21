@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="platform">
+      <UniqueIdentifier>{F040E8BA-F77A-8B19-E764-5FC5D53C4EF0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\uwp">
+      <UniqueIdentifier>{E4FDE51B-D6E3-1AE3-6031-FAB2D186158E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform">
+      <UniqueIdentifier>{F040E8BA-F77A-8B19-E764-5FC5D53C4EF0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\uwp">
+      <UniqueIdentifier>{E4FDE51B-D6E3-1AE3-6031-FAB2D186158E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\adobepie\test\unit_tests\source\platform\uwp\test_runner.cpp">
+      <Filter>platform\uwp</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

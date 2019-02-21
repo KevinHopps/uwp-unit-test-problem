@@ -16,16 +16,6 @@
       BOOST_FILESYSTEM_NO_DEPRECATED;
     </PIE_PP>
     <PIE_DLLs>
-	    ACE.DLL;
-	    AGM.DLL;
-	    BIB.DLL;
-	    BIBUTILS.DLL;
-	    COOLTYPE.DLL;
-	    ADOBEPSL.DLL;
-	    AXE8SHAREDEXPAT.DLL;
-	    ADOBEXMP.DLL;
-      ADOBEXMPFILES.DLL;
-	    WRSERVICES.DLL;
     </PIE_DLLs>
   </PropertyGroup>
 

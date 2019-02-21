@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<PropertyGroup Label="UserMacros">
+<USER_DEFINES_PS_CONFIG Condition="'$(Configuration)'=='Debug'"></USER_DEFINES_PS_CONFIG>
+<USER_DEFINES_PS_CONFIG Condition="'$(Configuration)'=='Release'">RELEASE_BUILD=1</USER_DEFINES_PS_CONFIG>
+<USER_DEFINES_PS>__ASSERT_MACROS_DEFINE_VERSIONS_WITHOUT_UNDERSCORES=0;_FORTIFY_SOURCE=2;PS_HONESTY_BUILD=0;ACCESSOR_CALLS_ARE_FUNCTIONS=1;OPAQUE_TOOLBOX_STRUCTS=1;$(USER_DEFINES_PS_CONFIG)</USER_DEFINES_PS>
+<USER_DEFINES_AXE>AXE_DOM_CORE=1</USER_DEFINES_AXE>
+<USER_DEFINES_SLO_CONFIG Condition="'$(Configuration)'=='Debug'">SLODEBUG=1</USER_DEFINES_SLO_CONFIG>
+<USER_DEFINES_SLO_CONFIG Condition="'$(Configuration)'=='Release'"></USER_DEFINES_SLO_CONFIG>
+<USER_DEFINES_SLO>SLO_COMPLEXSCRIPT=0;SLO_DISABLE_LILO_LINGUISTIC=1;SLO_THREAD_SAFE=1;$(USER_DEFINES_SLO_CONFIG)</USER_DEFINES_SLO>
+<USER_DEFINES_TBB>__TBB_ALLOW_MUTABLE_FUNCTORS=1</USER_DEFINES_TBB>
+<VS_PIE_ADDITIONAL_DEPS>WindowsApp.lib;ACE.lib;ACE.lib;AdobeSVGAGM.lib;AdobeXMP.lib;AdobeXMPFiles.lib;AGM.lib;AXE8SharedExpat.lib;BIB.lib;BIB.lib;BIBUtils.lib;BIBUtils.lib;CoolType.lib;CoolType.lib;icucnv.lib;icuin.lib;icuuc.lib;SVGRE.lib;WRServices.lib;gdiplus.lib;glu32.lib;imm32.lib;dxgi.lib;mscms.lib;msimg32.lib;opengl32.lib;psapi.lib;shlwapi.lib;version.lib;Wbemuuid.lib;wiaguid.lib;winmm.lib;Ws2_32.lib;winhttp.lib;Dwmapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;Urlmon.lib;Wininet.lib;Shcore.lib</VS_PIE_ADDITIONAL_DEPS>
+<VS_PIE_DLLS>ACE.DLL;AGM.DLL;AXE8SHAREDEXPAT.DLL;BIB.DLL;BIBUTILS.DLL;COOLTYPE.DLL;WRServices.dll</VS_PIE_DLLS>
+<DIR_ROOT>..\..\..</DIR_ROOT>
+<DIR_PLUGINS>$(DIR_ROOT)/plugins</DIR_PLUGINS>
+<DIR_PS>$(DIR_ROOT)/photoshop</DIR_PS>
+<DIR_SHARED>$(DIR_ROOT)/shared</DIR_SHARED>
+<DIR_SLO>$(DIR_PS)/slotextengine</DIR_SLO>
+<VS_PIE_BIN_DIR>$(DIR_PS)/projects/pie/bin_uwp</VS_PIE_BIN_DIR>
+<DIR_BRAVO>$(DIR_SHARED)/coretech/green/bravo</DIR_BRAVO>
+<DIR_SOURCE_LIBRARY>$(DIR_SHARED)/source_library</DIR_SOURCE_LIBRARY>
+<DIR_TBB>$(DIR_SHARED)/intel-tbb/</DIR_TBB>
+<VS_BIN_BRAVO_DIR_CONFIG Condition="'$(Configuration)'=='Debug'">$(VS_PIE_BIN_DIR)/bravo/debug</VS_BIN_BRAVO_DIR_CONFIG>
+<VS_BIN_BRAVO_DIR_CONFIG Condition="'$(Configuration)'=='Release'">$(VS_PIE_BIN_DIR)/bravo/release</VS_BIN_BRAVO_DIR_CONFIG>
+<VS_BIN_BRAVO_DIR>$(VS_BIN_BRAVO_DIR_CONFIG)</VS_BIN_BRAVO_DIR>
+<DIR_APL>$(DIR_SOURCE_LIBRARY)/apl</DIR_APL>
+<DIR_ASL>$(DIR_SOURCE_LIBRARY)/asl</DIR_ASL>
+<DIR_DCONV>$(DIR_SOURCE_LIBRARY)/dconv</DIR_DCONV>
+<DIR_LIBPNG>$(DIR_SOURCE_LIBRARY)/libpng</DIR_LIBPNG>
+<DIR_ZLIB>$(DIR_SOURCE_LIBRARY)/zlib</DIR_ZLIB>
+<DIR_BOOST>$(DIR_SOURCE_LIBRARY)/boost</DIR_BOOST>
+<VS_PIE_APP_LIB_DIRS>$(VS_BIN_BRAVO_DIR)/ace2;$(VS_BIN_BRAVO_DIR)/agm4minmt;$(VS_BIN_BRAVO_DIR)/are;$(VS_BIN_BRAVO_DIR)/bib;$(VS_BIN_BRAVO_DIR)/bibutils;$(VS_BIN_BRAVO_DIR)/cooltype5mt;$(VS_PIE_BIN_DIR)/jpeg2k/$(Configuration);$(VS_PIE_BIN_DIR)/pdfsettings/$(Configuration);$(VS_PIE_BIN_DIR)/tbb/$(Configuration);$(VS_PIE_BIN_DIR)/xml/$(Configuration);$(VS_PIE_BIN_DIR)/xmp/$(Configuration);$(VS_PIE_BIN_DIR)/icu/$(Configuration);$(VS_PIE_BIN_DIR)/svg/$(Configuration);$(VS_PIE_BIN_DIR)/svgre/$(Configuration);$(VS_PIE_BIN_DIR)/wrservices/$(Configuration)</VS_PIE_APP_LIB_DIRS>
+
+<PREPROCESSOR_DEFS_CONFIG Condition="'$(Configuration)'=='Debug'">DEBUG;_DEBUG;_DEBUG=1</PREPROCESSOR_DEFS_CONFIG>
+<PREPROCESSOR_DEFS_CONFIG Condition="'$(Configuration)'=='Release'">NDEBUG;_NDEBUG</PREPROCESSOR_DEFS_CONFIG>
+<PREPROCESSOR_DEFS>$(USER_DEFINES_AXE);$(USER_DEFINES_BRAVO);$(USER_DEFINES_PS);$(USER_DEFINES_SLO);$(USER_DEFINES_TBB);BIB_MULTI_THREAD=1;BIB_NEW_HOST_INIT=1;BOOST_ALL_NO_LIB;BOOST_TEST_ALTERNATIVE_INIT_API;BOOST_TEST_NO_MAIN;BOOST_THREAD_BUILD_LIB;BOOST_THREAD_PROVIDES_EXECUTORS;BOOST_THREAD_PROVIDES_FUTURE;BOOST_THREAD_PROVIDES_FUTURE_CONTINUATION;INSIDE_PHOTOSHOP=1;MSWindows=1;PHOTOSHOP_PRODUCT_CONFIG=APOLLO;PIE_UWP;SQLITE_OS_WINRT=1;UNICODE;WIN32;WIN64;WINAPI_FAMILY=WINAPI_FAMILY_APP;WINRT_WORKER;WINVER=0x0A00;_AMD64;_AMD64_=1;_CRT_SECURE_NO_DEPRECATE;_ENABLE_EXTENDED_ALIGNED_STORAGE;_SCL_SECURE_NO_DEPRECATE;_UNICODE;_WIN32_WINDOWS=0x0A00;_WIN32_WINNT=0x0A00;_WINDOWS;qAssertions=1;qPhotoshopLib=1;$(PREPROCESSOR_DEFS_CONFIG)</PREPROCESSOR_DEFS>
+
+<HEADER_SEARCH_PATHS>$(DIR_APL);$(DIR_APL_PLATFORM);$(DIR_ASL);$(DIR_BOOST);$(DIR_BRAVO)/public/include/api;$(DIR_BRAVO)/public/include/config/win32;$(DIR_BRAVO)/public/include/source;$(DIR_DCONV);$(DIR_LIBPNG);$(DIR_PS)/adobepie/include;$(DIR_PS)/adobepie/source/include;$(DIR_PS)/adobepie/test/unit_tests/source;$(DIR_PS)/adobepie/test/unit_tests/source/platform/uwp;$(DIR_PS)/adobepsl/public/include;$(DIR_PS)/adobepsl/source;$(DIR_PS)/coretech/aslib;$(DIR_PS)/coretech/aslib/interfaces;$(DIR_PS)/framework/interfaces;$(DIR_PS)/framework/win/api;$(DIR_PS)/interfaces;$(DIR_PS)/libapollo/stubs;$(DIR_PS)/refbottlenecks;$(DIR_PS)/slotextengine/external/wrservices/public/includes;$(DIR_PS)/switches;$(DIR_PS)/windows/winheaders;$(DIR_PS)/windows/winunivheaders;$(DIR_SHARED)/atg;$(DIR_SHARED)/atg/aml;$(DIR_SHARED)/atg/array_math;$(DIR_SHARED)/atg/dbrush/external/gml-1.1;$(DIR_SHARED)/atg/dbrush/include;$(DIR_SHARED)/atg/vision/src;$(DIR_SHARED)/extensionservice/plugplug/public/include;$(DIR_SHARED)/extensionservice/plugplug/public/include/connectionshome;$(DIR_SHARED)/gtlib/public/aglc40/include;$(DIR_SHARED)/include;$(DIR_SHARED)/include/photoshop;$(DIR_SHARED)/include/rapidjson/include;$(DIR_SHARED)/include/sweetpea/spapi;$(DIR_SHARED)/include/xmp;$(DIR_SHARED)/manta/manta/public/include;$(DIR_SHARED)/path_include;$(DIR_SHARED)/path_include/rez;$(DIR_SHARED)/ps-acp-local/acp-local/acp.local/resource/dcx-cpp/src/public;$(DIR_SHARED)/psutil/public/include/all;$(DIR_SHARED)/psutil/public/include/win;$(DIR_SHARED)/resources;$(DIR_SHARED)/seamcarving;$(DIR_SHARED)/superlu/src;$(DIR_SHARED)/uxtech;$(DIR_SOURCE_LIBRARY)/intel/windows/mkl/include;$(DIR_TBB)/include;$(DIR_ZLIB)</HEADER_SEARCH_PATHS>
+</PropertyGroup>
+<ItemDefinitionGroup>
+<ClCompile>
+<PreprocessorDefinitions>$(PREPROCESSOR_DEFS)</PreprocessorDefinitions>
+<AdditionalIncludeDirectories>$(HEADER_SEARCH_PATHS)</AdditionalIncludeDirectories>
+<LanguageStandard>stdcpp14</LanguageStandard>
+<MultiProcessorCompilation>true</MultiProcessorCompilation>
+<RuntimeLibrary Condition="'$(Configuration)'=='Debug'">MultiThreadedDebugDLL</RuntimeLibrary>
+<RuntimeLibrary Condition="'$(Configuration)'=='Release'">MultiThreadedDLL</RuntimeLibrary>
+<TreatWarningAsError>true</TreatWarningAsError>
+<WarningLevel>Level3</WarningLevel>
+<AdditionalOptions>/bigobj</AdditionalOptions>
+<Optimization Condition="'$(Configuration)'=='Debug'">Disabled</Optimization>
+</ClCompile>
+<Lib>
+<AdditionalOptions>/IGNORE:4221 /IGNORE:4042</AdditionalOptions>
+</Lib>
+<Link>
+<AdditionalDependencies>$(VS_PIE_ADDITIONAL_DEPS)</AdditionalDependencies>
+<AdditionalLibraryDirectories>$(VS_PIE_APP_LIB_DIRS)</AdditionalLibraryDirectories>
+<DelayLoadDLLs>$(VS_PIE_DLLS)</DelayLoadDLLs>
+</Link>
+</ItemDefinitionGroup>
+</Project>

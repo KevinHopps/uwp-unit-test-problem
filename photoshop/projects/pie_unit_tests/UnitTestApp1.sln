@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "boost_system_uwp", "..\..\.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "boost_filesystem_uwp", "..\..\..\shared\projects\boost\boost_filesystem_uwp.vcxproj", "{353C3ACB-4A02-1776-E444-0212C9467845}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pie_unit_tests_lib_uwp", "pie_unit_tests_lib_uwp.vcxproj", "{CC9C607F-6CCC-F4C7-9C70-E84FB0BDF1DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -65,6 +67,16 @@ Global
 		{353C3ACB-4A02-1776-E444-0212C9467845}.Release|x64.ActiveCfg = Release|x64
 		{353C3ACB-4A02-1776-E444-0212C9467845}.Release|x64.Build.0 = Release|x64
 		{353C3ACB-4A02-1776-E444-0212C9467845}.Release|x86.ActiveCfg = Release|x64
+		{CC9C607F-6CCC-F4C7-9C70-E84FB0BDF1DC}.Debug|ARM.ActiveCfg = Debug|x64
+		{CC9C607F-6CCC-F4C7-9C70-E84FB0BDF1DC}.Debug|ARM64.ActiveCfg = Debug|x64
+		{CC9C607F-6CCC-F4C7-9C70-E84FB0BDF1DC}.Debug|x64.ActiveCfg = Debug|x64
+		{CC9C607F-6CCC-F4C7-9C70-E84FB0BDF1DC}.Debug|x64.Build.0 = Debug|x64
+		{CC9C607F-6CCC-F4C7-9C70-E84FB0BDF1DC}.Debug|x86.ActiveCfg = Debug|x64
+		{CC9C607F-6CCC-F4C7-9C70-E84FB0BDF1DC}.Release|ARM.ActiveCfg = Release|x64
+		{CC9C607F-6CCC-F4C7-9C70-E84FB0BDF1DC}.Release|ARM64.ActiveCfg = Release|x64
+		{CC9C607F-6CCC-F4C7-9C70-E84FB0BDF1DC}.Release|x64.ActiveCfg = Release|x64
+		{CC9C607F-6CCC-F4C7-9C70-E84FB0BDF1DC}.Release|x64.Build.0 = Release|x64
+		{CC9C607F-6CCC-F4C7-9C70-E84FB0BDF1DC}.Release|x86.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
