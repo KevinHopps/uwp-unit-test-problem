@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<PropertyGroup Label="UserMacros">
+<DIR_ROOT>..\..\..</DIR_ROOT>
+<DIR_PLUGINS>$(DIR_ROOT)/plugins</DIR_PLUGINS>
+<DIR_PS>$(DIR_ROOT)/photoshop</DIR_PS>
+<DIR_SHARED>$(DIR_ROOT)/shared</DIR_SHARED>
+<DIR_SLO>$(DIR_PS)/slotextengine</DIR_SLO>
+<DIR_BRAVO>$(DIR_SHARED)/coretech/green/bravo</DIR_BRAVO>
+<DIR_SOURCE_LIBRARY>$(DIR_SHARED)/source_library</DIR_SOURCE_LIBRARY>
+<DIR_TBB>$(DIR_SHARED)/intel-tbb/</DIR_TBB>
+<DIR_APL>$(DIR_SOURCE_LIBRARY)/apl</DIR_APL>
+<DIR_ASL>$(DIR_SOURCE_LIBRARY)/asl</DIR_ASL>
+<DIR_DCONV>$(DIR_SOURCE_LIBRARY)/dconv</DIR_DCONV>
+<DIR_LIBPNG>$(DIR_SOURCE_LIBRARY)/libpng</DIR_LIBPNG>
+<DIR_ZLIB>$(DIR_SOURCE_LIBRARY)/zlib</DIR_ZLIB>
+<DIR_BOOST>$(DIR_SOURCE_LIBRARY)/boost</DIR_BOOST>
+
+<PREPROCESSOR_DEFS_CONFIG Condition="'$(Configuration)'=='Debug'">DEBUG;_DEBUG</PREPROCESSOR_DEFS_CONFIG>
+<PREPROCESSOR_DEFS_CONFIG Condition="'$(Configuration)'=='Release'">NDEBUG;_NDEBUG</PREPROCESSOR_DEFS_CONFIG>
+<PREPROCESSOR_DEFS>BOOST_ALL_NO_LIB;BOOST_TEST_ALTERNATIVE_INIT_API;BOOST_TEST_NO_MAIN;BOOST_THREAD_BUILD_LIB;BOOST_THREAD_PROVIDES_EXECUTORS;BOOST_THREAD_PROVIDES_FUTURE;BOOST_THREAD_PROVIDES_FUTURE_CONTINUATION;PHOTOSHOP_PRODUCT_CONFIG=APOLLO;SQLITE_OS_WINRT=1;UNICODE;WIN32;WIN64;WINAPI_FAMILY=WINAPI_FAMILY_APP;WINRT_WORKER;WINVER=0x0A00;_AMD64;_AMD64_=1;_CRT_SECURE_NO_DEPRECATE;_ENABLE_EXTENDED_ALIGNED_STORAGE;_SCL_SECURE_NO_DEPRECATE;_UNICODE;_WIN32_WINDOWS=0x0A00;_WIN32_WINNT=0x0A00;_WINDOWS;$(PREPROCESSOR_DEFS_CONFIG)</PREPROCESSOR_DEFS>
+
+<HEADER_SEARCH_PATHS>$(DIR_BOOST)</HEADER_SEARCH_PATHS>
+</PropertyGroup>
+<ItemDefinitionGroup>
+<ClCompile>
+<PreprocessorDefinitions>$(PREPROCESSOR_DEFS)</PreprocessorDefinitions>
+<AdditionalIncludeDirectories>$(HEADER_SEARCH_PATHS)</AdditionalIncludeDirectories>
+<LanguageStandard>stdcpp14</LanguageStandard>
+<MultiProcessorCompilation>true</MultiProcessorCompilation>
+<RuntimeLibrary Condition="'$(Configuration)'=='Debug'">MultiThreadedDebugDLL</RuntimeLibrary>
+<RuntimeLibrary Condition="'$(Configuration)'=='Release'">MultiThreadedDLL</RuntimeLibrary>
+<TreatWarningAsError>true</TreatWarningAsError>
+<WarningLevel>Level3</WarningLevel>
+</ClCompile>
+<Lib>
+<AdditionalOptions>/IGNORE:4221 /IGNORE:4042</AdditionalOptions>
+</Lib>
+</ItemDefinitionGroup>
+</Project>
