@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTestApp1", "UnitTestApp1.vcxproj", "{A960247A-3757-4FD1-BCE0-E5871F47EEAF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTestApp1", "..\..\adobepie\test\unit_tests\build\uwp\internal\UnitTestApp1.vcxproj", "{A960247A-3757-4FD1-BCE0-E5871F47EEAF}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "boost_system_uwp", "..\..\..\shared\projects\boost\boost_system_uwp.vcxproj", "{A0765271-8EED-DC74-AEA5-A064D08B7DB9}"
 EndProject
