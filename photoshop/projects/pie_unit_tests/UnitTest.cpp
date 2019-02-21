@@ -7,6 +7,8 @@
 #include <Windows.h>
 #include <ctime>
 
+#include "boost/filesystem.hpp"
+
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace UnitTestApp1
@@ -16,15 +18,8 @@ namespace UnitTestApp1
     public:
         TEST_METHOD(TestMethod1)
         {
-			std::ostringstream log;
-
-			log << "UnitTestApp1 begin" << std::endl;
-
-			char ctime_buf[32];
-			time_t now;
-			std::time(&now);
-			ctime_s(ctime_buf, sizeof(ctime_buf), &now);
-			log << ctime_buf << std::flush;
+			boost::filesystem::path path1("a/b/c.txt");
+			boost::filesystem::path path2 = path1;
         }
     };
 }

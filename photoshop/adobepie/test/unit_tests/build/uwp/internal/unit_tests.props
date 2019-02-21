@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  
+  <PropertyGroup Label="UserMacros">
+    <PIE_Includes>
+      ..\..\..\..\..\..\..\shared\source_library\boost;      
+      ..\..\..\source;
+      ..\..\..\source\platform\uwp;
+    </PIE_Includes>
+    <PIE_PP>
+      BOOST_ALL_NO_LIB;      
+      BOOST_THREAD_PROVIDES_FUTURE;      
+      BOOST_THREAD_PROVIDES_FUTURE_CONTINUATION;      
+      BOOST_THREAD_PROVIDES_EXECUTORS;      
+      BOOST_FILESYSTEM_NO_DEPRECATED;
+    </PIE_PP>
+    <PIE_DLLs>
+	    ACE.DLL;
+	    AGM.DLL;
+	    BIB.DLL;
+	    BIBUTILS.DLL;
+	    COOLTYPE.DLL;
+	    ADOBEPSL.DLL;
+	    AXE8SHAREDEXPAT.DLL;
+	    ADOBEXMP.DLL;
+      ADOBEXMPFILES.DLL;
+	    WRSERVICES.DLL;
+    </PIE_DLLs>
+  </PropertyGroup>
+
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(PIE_Includes)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>$(PIE_PP);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+
+</Project>
