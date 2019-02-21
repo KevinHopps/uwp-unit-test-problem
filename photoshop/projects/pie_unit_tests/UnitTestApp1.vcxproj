@@ -226,6 +226,7 @@
     <Xml Include="UnitTestApp.rd.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Library Include="Debug\boost_uwp\lib\boost_filesystem_uwp.lib" />
     <Library Include="Debug\boost_uwp\lib\boost_system_uwp.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

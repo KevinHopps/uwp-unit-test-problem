@@ -63,5 +63,8 @@
     <Library Include="Debug\boost_uwp\lib\boost_system_uwp.lib">
       <Filter>Libs\Debug</Filter>
     </Library>
+    <Library Include="Debug\boost_uwp\lib\boost_filesystem_uwp.lib">
+      <Filter>Libs\Debug</Filter>
+    </Library>
   </ItemGroup>
 </Project>
