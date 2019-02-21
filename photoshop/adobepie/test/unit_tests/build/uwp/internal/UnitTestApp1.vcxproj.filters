@@ -60,10 +60,10 @@
     <None Include="UnitTestApp1_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Library Include="Debug\boost_uwp\lib\boost_system_uwp.lib">
+    <Library Include="..\..\..\..\..\..\projects\pie_unit_tests\Debug\boost_uwp\lib\boost_filesystem_uwp.lib">
       <Filter>Libs\Debug</Filter>
     </Library>
-    <Library Include="Debug\boost_uwp\lib\boost_filesystem_uwp.lib">
+    <Library Include="..\..\..\..\..\..\projects\pie_unit_tests\Debug\boost_uwp\lib\boost_system_uwp.lib">
       <Filter>Libs\Debug</Filter>
     </Library>
   </ItemGroup>

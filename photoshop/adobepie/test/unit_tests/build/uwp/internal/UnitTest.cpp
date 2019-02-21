@@ -18,8 +18,20 @@ namespace UnitTestApp1
     public:
         TEST_METHOD(TestMethod1)
         {
-			boost::filesystem::path path1("a/b/c.txt");
-			boost::filesystem::path path2 = path1;
-        }
+			auto out_path = boost::filesystem::path(std::wstring(Windows::Storage::ApplicationData::Current->LocalFolder->Path->Begin())).append("output");
+			auto resource_path = boost::filesystem::path(std::wstring(Windows::ApplicationModel::Package::Current->InstalledLocation->Path->Begin()));
+
+			std::size_t failed_tests = 0;
+			// auto failed_tests = run_tests(out_path.string().c_str(), resource_path.string().c_str());
+
+			boost::filesystem::path log_path = out_path / "test_log.txt";
+			std::ofstream           log(log_path.string().c_str());
+
+			std::ostringstream oss;
+			oss << "failed_tests=" << failed_tests << '\n';
+			oss << "log output is at " << log_path.string() << '\n';
+
+			Assert::AreEqual(failed_tests, size_t{ 0 });
+		}
     };
 }
