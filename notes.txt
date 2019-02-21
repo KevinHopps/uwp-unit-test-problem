@@ -11,3 +11,13 @@ UnitTestApp1.build.appxrecipe is built for Framework FrameworkUap10 and Platform
 [2/21/2019 10:54:58 AM Error] vstest.console process failed to connect to testhost process after 300 seconds. This may occur due to machine slowness, please set environment variable VSTEST_CONNECTION_TIMEOUT to increase timeout.
 [2/21/2019 10:55:00 AM Informational] ========== Run test finished: 0 run (0:05:36.0546138) ==========
 
+Apparently trying again makes this work:
+[2/21/2019 11:42:30 AM Informational] ------ Discover test started ------
+[2/21/2019 11:42:30 AM Warning] Test run will use DLL(s) built for framework Framework45 and platform X86. Following DLL(s) will not be part of run: 
+UnitTestApp1.build.appxrecipe is built for Framework FrameworkUap10 and Platform X64.
+ Go to http://go.microsoft.com/fwlink/?LinkID=236877&clcid=0x409 for more details on managing these settings.
+[2/21/2019 11:42:31 AM Informational] Test Adapter for Google Test: Test discovery starting...
+[2/21/2019 11:42:31 AM Informational] Test discovery completed, overall duration: 00:00:00.0807895
+[2/21/2019 11:42:32 AM Informational] ========== Discover test finished: 1 found (0:00:01.3810611) ==========
+[2/21/2019 11:42:32 AM Informational] ------ Run test started ------
+[2/21/2019 11:42:34 AM Informational] ========== Run test finished: 1 run (0:00:02.5199491) ==========
