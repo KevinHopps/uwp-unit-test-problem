@@ -229,6 +229,7 @@
   <ItemGroup>
     <Library Include="..\..\..\..\..\..\projects\pie_unit_tests\Debug\boost_uwp\lib\boost_filesystem_uwp.lib" />
     <Library Include="..\..\..\..\..\..\projects\pie_unit_tests\Debug\boost_uwp\lib\boost_system_uwp.lib" />
+    <Library Include="..\..\..\..\..\..\projects\pie_unit_tests\Debug\pie_unit_tests_lib_uwp\pie_unit_tests_lib_uwp.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,0 +1,4 @@
+LIBRARY   "pie_unit_tests_lib_uwp"
+
+EXPORTS
+run_tests

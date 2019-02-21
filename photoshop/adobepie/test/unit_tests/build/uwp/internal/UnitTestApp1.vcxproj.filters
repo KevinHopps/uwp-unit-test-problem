@@ -66,5 +66,8 @@
     <Library Include="..\..\..\..\..\..\projects\pie_unit_tests\Debug\boost_uwp\lib\boost_system_uwp.lib">
       <Filter>Libs\Debug</Filter>
     </Library>
+    <Library Include="..\..\..\..\..\..\projects\pie_unit_tests\Debug\pie_unit_tests_lib_uwp\pie_unit_tests_lib_uwp.lib">
+      <Filter>Libs\Debug</Filter>
+    </Library>
   </ItemGroup>
 </Project>
