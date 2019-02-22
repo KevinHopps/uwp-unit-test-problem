@@ -1,6 +1,7 @@
 # uwp-unit-test-problem
 
 Open the solution file photoshop\projects\pie_unit_tests\UnitTestApp1.sln and click Run All in the Test Explorer. See the diagnostic similar to the following:
+
 `[2/22/2019 10:42:19 AM Informational] ------ Discover test started ------`
 `[2/22/2019 10:42:19 AM Warning] Test run will use DLL(s) built for framework Framework45 and platform X86. Following DLL(s) will not be part of run: `
 `pie_unit_tests_lib_uwp.dll is built for Framework None and Platform X64.`
