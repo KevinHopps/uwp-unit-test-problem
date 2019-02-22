@@ -14,6 +14,9 @@
     <Filter Include="Libs\Debug">
       <UniqueIdentifier>{a00c9de0-7b14-4e94-9246-4b04fd340033}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Libs\Release">
+      <UniqueIdentifier>{612aadf5-657d-4d26-9ed0-f12ad9fe2154}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="UnitTestApp.xaml" />
@@ -60,14 +63,11 @@
     <None Include="UnitTestApp1_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Library Include="..\..\..\..\..\..\projects\pie_unit_tests\Debug\boost_uwp\lib\boost_filesystem_uwp.lib">
-      <Filter>Libs\Debug</Filter>
-    </Library>
-    <Library Include="..\..\..\..\..\..\projects\pie_unit_tests\Debug\boost_uwp\lib\boost_system_uwp.lib">
-      <Filter>Libs\Debug</Filter>
-    </Library>
     <Library Include="..\..\..\..\..\..\projects\pie_unit_tests\Debug\pie_unit_tests_lib_uwp\pie_unit_tests_lib_uwp.lib">
       <Filter>Libs\Debug</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\projects\pie_unit_tests\Release\pie_unit_tests_lib_uwp\pie_unit_tests_lib_uwp.lib">
+      <Filter>Libs\Release</Filter>
     </Library>
   </ItemGroup>
 </Project>

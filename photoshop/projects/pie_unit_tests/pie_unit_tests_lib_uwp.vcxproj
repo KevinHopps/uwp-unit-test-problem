@@ -69,16 +69,6 @@
   <ItemGroup>
     <ClCompile Include="..\..\adobepie\test\unit_tests\source\platform\uwp\test_runner.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\shared\projects\boost\boost_filesystem_uwp.vcxproj">
-      <Project>{353C3ACB-4A02-1776-E444-0212C9467845}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\shared\projects\boost\boost_system_uwp.vcxproj">
-      <Project>{A0765271-8EED-DC74-AEA5-A064D08B7DB9}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
   <ImportGroup Label="ExtensionTargets" />
