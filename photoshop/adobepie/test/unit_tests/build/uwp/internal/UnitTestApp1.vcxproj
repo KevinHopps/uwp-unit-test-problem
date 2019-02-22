@@ -107,8 +107,12 @@
     <Xml Include="UnitTestApp.rd.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Library Include="..\..\..\..\..\..\projects\pie_unit_tests\Debug\pie_unit_tests_lib_uwp\pie_unit_tests_lib_uwp.lib" />
-    <Library Include="..\..\..\..\..\..\projects\pie_unit_tests\Release\pie_unit_tests_lib_uwp\pie_unit_tests_lib_uwp.lib" />
+    <Library Include="..\..\..\..\..\..\projects\pie_unit_tests\Debug\pie_unit_tests_lib_uwp\pie_unit_tests_lib_uwp.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\..\..\..\..\..\projects\pie_unit_tests\Release\pie_unit_tests_lib_uwp\pie_unit_tests_lib_uwp.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </Library>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
