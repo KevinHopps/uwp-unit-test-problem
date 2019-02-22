@@ -19,3 +19,7 @@ Open the solution file photoshop\projects\pie_unit_tests\UnitTestApp1.sln and cl
 Note the error "Failed to initialize client proxy: could not connect to test process."
 
 The problem seems to be related to the fact that the project pie_unit_tests_lib_uwp is a DLL. Open its project properties and change its Configuration Type to Static library (.lib), then click Run All again. See that the problem is gone.
+
+One additional issue is that I have to add the .lib of pie_unit_tests_lib_uwp to UnitTestApp1 specifically in the Libs filter. When I try to add the project pie_unit_tests_lib_uwp to the References of UnitTestApp1, I get an error that says "A reference to 'pie_unit_tests_lib_uwp' cannot be added because it is incompatible with this project." 
+
+**Please explain why pie_unit_tests_uwp_lib is incompatible with UnitTestApp1 and how I can add project dependencies as references rather than having to add them explicitly.**
