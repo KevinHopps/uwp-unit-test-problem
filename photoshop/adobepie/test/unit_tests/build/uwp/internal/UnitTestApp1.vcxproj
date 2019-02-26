@@ -80,9 +80,13 @@
     </AppxManifest>
     <None Include="..\..\..\..\..\..\projects\pie_unit_tests\Debug\pie_unit_tests_lib_uwp\pie_unit_tests_lib_uwp.dll">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent>true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DeploymentContent>
     </None>
     <None Include="..\..\..\..\..\..\projects\pie_unit_tests\Release\pie_unit_tests_lib_uwp\pie_unit_tests_lib_uwp.dll">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <DeploymentContent>true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DeploymentContent>
     </None>
     <None Include="UnitTestApp1_TemporaryKey.pfx" />
   </ItemGroup>
