@@ -17,6 +17,15 @@
     <Filter Include="Libs\Release">
       <UniqueIdentifier>{612aadf5-657d-4d26-9ed0-f12ad9fe2154}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DLLs">
+      <UniqueIdentifier>{54a14164-6c27-4cf7-a4e5-b7ecfad41a82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DLLs\Debug">
+      <UniqueIdentifier>{f64184b0-94f5-4fb7-8c65-7857d6283918}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DLLs\Release">
+      <UniqueIdentifier>{542d59e7-f4c1-4a32-9a9c-c322625cd8c0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="UnitTestApp.xaml" />
@@ -61,6 +70,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="UnitTestApp1_TemporaryKey.pfx" />
+    <None Include="..\..\..\..\..\..\projects\pie_unit_tests\Debug\pie_unit_tests_lib_uwp\pie_unit_tests_lib_uwp.dll">
+      <Filter>DLLs\Debug</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\projects\pie_unit_tests\Release\pie_unit_tests_lib_uwp\pie_unit_tests_lib_uwp.dll">
+      <Filter>DLLs\Release</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Library Include="..\..\..\..\..\..\projects\pie_unit_tests\Debug\pie_unit_tests_lib_uwp\pie_unit_tests_lib_uwp.lib">
